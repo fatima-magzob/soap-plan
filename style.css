@@ -1,0 +1,77 @@
+*,*:after,*:before{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-color: #fafafa;	 
+}
+
+.messages{
+	width: 100vw;		 	 
+	display: flex;
+	flex-direction: row;	 
+	align-items: center;
+	justify-content:  space-between;
+}
+
+.gamearea{
+	width: 100vw;
+	height: inherit;
+
+}
+
+.plane{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100px;
+	height: 100px;
+	background-image: url(soap.svg);
+	background-size: cover;
+}
+
+.message, .score{	
+	font-size: 26px;
+	font-weight: bold;
+	text-shadow: 1px 2px 3px #0000004f;
+}
+
+.message{
+	margin: auto;  /* -------- this will centered the flex-element with justify-content: flex-end to the flex container----------- */
+	padding: 10px;	 
+	/*justify-self: center;*/
+}
+
+.score{
+	padding: 5px;
+	margin: 5px;	  
+}
+
+.base{
+	position: absolute;
+	bottom: 0;
+	width: 200px;
+	background: #6a96d7;	
+}
+
+.bomb{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:20px;
+	height: 20px;
+	background: #8eafe2;
+	border-radius: 50%;
+	/*transition: all .2s ease;*/
+	color: #fafafa;
+}
+
+.hide{
+	display: none;
+}
